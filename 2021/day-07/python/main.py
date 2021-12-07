@@ -10,6 +10,7 @@ max_pos = max(horizontal_pos)
 vals = [sum([abs(pos - i) for pos in horizontal_pos]) for i in range(min_pos, max_pos)]
 print(f"part 1 answer = {min(vals)}")
 
+# part 2
 range_vals = {0: 0,}
 for i in range(1, max(horizontal_pos)+1):
     range_vals[i] = range_vals[i-1] + i
